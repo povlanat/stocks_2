@@ -224,7 +224,7 @@ if not all:
 else:
     n = 'all'
 # Отображение графика
-st.bar_chart(df_filtered[f'target_{n}'].value_counts().reindex(range(-30, 31), fill_value=0), height=400)
+st.bar_chart(df_filtered[f'target_{n}'].value_counts().reindex(range(-60, 61), fill_value=0), height=400)
 
 # Расчет среднего значения и стандартного отклонения
 count_target = df_filtered[f"target_{n}"].count()
